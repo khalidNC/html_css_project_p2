@@ -2,17 +2,20 @@ body {
   margin: 10px;
 }
 
+/* Box model: */
 p {
   padding: 10px 20px;
   border: 10px solid red;
 }
 
-.first p {
+.first p, footer {
   padding: 0;
-  margin: 20px;
+  margin: 10px;
   border: none;
+  width: 80ch;
 }
 
+/* layout-content-page: */
 table, td, th {
   border: 1px solid #c4dcf3;
   border-left: 0;
@@ -22,6 +25,7 @@ table, td, th {
 
 td, th {
   padding: 10px;
+  padding-right: 100px;
 }
 
 th {
@@ -33,7 +37,7 @@ tr:nth-child(odd) {
   background-color: #eef7ff;
 }
 
-footer {
-  padding: 0;
-  margin: 20px;
+.closing-statement p {
+  border: none;
+  color: blue;
 }
