@@ -1,0 +1,20 @@
+body {
+  margin: 10px;
+}
+
+header {
+  background: rgba(234, 115, 115, 0.5);
+}
+
+#top-navigation {
+  border: 1px solid royalblue;
+  background-color: rgba(115, 173, 234, 0.478);
+}
+
+li {
+  padding: 0;
+  margin: 20px;
+  border: 1px solid yellowgreen;
+  background-color: yellowgreen;
+  width: 200px;
+}

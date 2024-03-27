@@ -1,0 +1,39 @@
+body {
+  margin: 10px;
+}
+
+p {
+  padding: 10px 20px;
+  border: 10px solid red;
+}
+
+.first p {
+  padding: 0;
+  margin: 20px;
+  border: none;
+}
+
+table, td, th {
+  border: 1px solid #c4dcf3;
+  border-left: 0;
+  border-right: 0;
+  border-collapse: collapse;
+}
+
+td, th {
+  padding: 10px;
+}
+
+th {
+  background-color: #427fef;
+  color: white;
+}
+
+tr:nth-child(odd) {
+  background-color: #eef7ff;
+}
+
+footer {
+  padding: 0;
+  margin: 20px;
+}
