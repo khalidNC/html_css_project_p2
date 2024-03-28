@@ -3,16 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sizing Elements</title>
+    <title>Overflowing</title>
     <link rel="stylesheet" href="/normalize.css" />
-    <link rel="stylesheet" href="/layout/css/sizing_elements.css" />
-    <link rel="stylesheet" href="/layout/css/boxmodel.css" />
+    <link rel="stylesheet" href="/layout/css/overflowing.css" />
   </head>
   <body>
-    <header>
-      <h1>Sizing Elements in HTML:</h1>
-    </header>
-    <main id="sizing-elem">
+    <header><h1>Overflowing concept in HTML:</h1></header>
+    <main>
       <section>
         <article class="first">
           <p>
@@ -23,8 +20,16 @@
           </p>
         </article>
       </section>
-      <section class="boxes">
-        <span class="box"></span><span class="box"></span>
+      <section>
+        <div class="box">
+          <p>
+            In flexbox and grid layouts, the overflow behavior can be controlled
+            at both the container and item level. Flex containers and grid
+            containers have their own overflow properties, while individual flex
+            items or grid items can have their own overflow behavior controlled
+            using the same properties.
+          </p>
+        </div>
       </section>
     </main>
     <footer><a href="/layout/layout_content.html">Layout Content</a></footer>
