@@ -1,5 +1,6 @@
 body {
   margin: 10px;
+  height: 200vh;
 }
 
 .boxes {
@@ -29,4 +30,9 @@ body {
 
 .box-three {
   background: greenyellow;
+  position: fixed;
+  top: 0;
+  left: 2rem;
+  right: 2rem;
+  width: auto;
 }
