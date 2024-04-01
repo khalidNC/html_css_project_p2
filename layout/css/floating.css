@@ -1,0 +1,17 @@
+body {
+  margin: 10px;
+}
+
+p {
+  padding: 0;
+  border: none;
+  width: 80ch;
+}
+
+.avator {
+  width: 5rem;
+  height: 5rem;
+  background-color: gold;
+  float: left;
+  margin-right: 0.5rem;
+}
