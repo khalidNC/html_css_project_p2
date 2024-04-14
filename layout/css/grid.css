@@ -23,3 +23,14 @@ body {
   height: 6rem;
   background-color: gold;
 }
+
+.container1 {
+  display: grid;
+  height: 90vh;
+  grid-template: 100px auto 100px / 30fr 70fr;
+  border: 3px solid gray;
+}
+
+.con1 {
+  background-color: royalblue;
+}
