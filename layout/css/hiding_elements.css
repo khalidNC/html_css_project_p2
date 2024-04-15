@@ -1,0 +1,11 @@
+body {
+  margin: 10px;
+}
+
+.first-para {
+  /* one way to hide the first element by using display property */
+  display: none;
+
+  /* another way to hide element by using visibility property  */
+  /* visibility: hidden; */
+}
