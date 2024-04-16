@@ -67,21 +67,28 @@ body {
   border-radius: 5px;
 }
 
-/* with min-width 768px of screen size the grid cell set 1 column */
+/* with min-width 768px of screen size the grid set 2 columns for the images with full grid space. */
 @media screen and (min-width: 768px) {
   .gallery {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-/* min-width 1024px of screensize the gallery grid is set to 3 columns. 
-and for 3 image place to the column line 2 to 4 and 2nd row.*/
+/* min-width 1024px of screensize the gallery is set to 3 columns. 
+and for 3rd image place to the column line 2 to 4 and first to 3rd row.*/
 @media screen and (min-width: 1024px) {
   .gallery {
     grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
   }
+
   .gallery img:nth-of-type(3) {
     grid-column: 2 / 4;
     grid-row: 1 / 3;
+    /* height: 61rem; Set explicite height for 3rd image to adjust space gap in grid */
   }
+
+  /* .gallery img {
+    height: 30rem; /* Set explicite height for the images to adjust space gap in grid 
+  } */
 }
