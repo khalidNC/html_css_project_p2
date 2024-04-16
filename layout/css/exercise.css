@@ -1,0 +1,87 @@
+/* The html element to 62.5% of the default font size of the browser, 
+which is used for calculating font sizes using the rem unit as 1rem equvalent 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* The browser will attempt to use the first font family (Arial). If Arial is not available, it will try Helvetica. 
+If neither of these fonts is available, it will fall back to a generic sans-serif font. */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+}
+
+/* navbar, a conatiner with background color blck and padding 0.7rem */
+.nav-bar {
+  background-color: #000;
+  padding: .7rem
+}
+
+/* The underder list section within the container we use flex and direction to column for mobile screen first */
+.nav-bar ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+/* List inside navbar have margin on top and bottom only. */
+.nav-bar li {
+  margin: .5rem 0;
+}
+
+/* list item has link currently not linked to anywhere with white color. */
+.nav-bar a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+/* List item has a hover effect of collor #fff*/
+.nav-bar a:hover {
+  color: #fff;
+}
+
+/* Using media query for the tablets and desktop screen.*/
+@media screen and (min-width: 768px) {
+  .nav-bar ul {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-bar li {
+    margin: 0 1rem;
+  }
+}
+
+/* Gallery, for gallery layout we are using grid */
+.gallery {
+  display: grid;
+  gap: 1rem;
+}
+
+/* Images are fit inside the grid so set rule object-fit: cover, width 100%, and round corner */
+.gallery img {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 5px;
+}
+
+/* with min-width 768px of screen size the grid cell set 1 column */
+@media screen and (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* min-width 1024px of screensize the gallery grid is set to 3 columns. 
+and for 3 image place to the column line 2 to 4 and 2nd row.*/
+@media screen and (min-width: 1024px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .gallery img:nth-of-type(3) {
+    grid-column: 2 / 4;
+    grid-row: 1 / 3;
+  }
+}
