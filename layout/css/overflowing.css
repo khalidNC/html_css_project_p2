@@ -9,14 +9,8 @@ body {
   overflow: auto;
 }
 
-footer {
-  padding: 0;
-  margin: 10px;
-}
-
 .first {
   padding: 0;
   margin: 10px;
   width: 80ch;
 }
-
