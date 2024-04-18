@@ -4,7 +4,7 @@
        url('/typography/css/fonts/open-sans/opensans-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
-  /* to handel flash unstyled text use font-display property and set optional. */
+  /* to handle flash of unstyled text use font-display property and set optional. */
   font-display: optional;
 }
 
