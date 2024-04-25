@@ -1,0 +1,14 @@
+body {
+  /* background: url(../all_images/images/bg-paper@2x.jpg); */
+  background: url(../all_images/images/bg-sanfrancisco.jpg);
+  background-repeat: no-repeat;
+  /* horizental repeatation */
+  /* background-repeat: repeat-x;  */
+  /* vertical repeatation */
+  /* background-repeat: repeat-y; */
+  /* background-position: 100%; */
+  /* background-size: 100% 100%; */
+  background-size: cover;
+  height: 300vh;
+  background-attachment: fixed;
+}
